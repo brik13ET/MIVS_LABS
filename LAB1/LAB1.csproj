@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0A1E1A7C-D144-4A0B-91E3-2A2CC880E4DC}</ProjectGuid>
+    <ProjectGuid>{7EA124DF-FCF9-4E65-AE40-5C6EA32EFBD8}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>MIVS_LAB</RootNamespace>
     <AssemblyName>MIVS_LAB</AssemblyName>
