@@ -65,14 +65,14 @@ namespace MIVS_Lab2
 			listBox1.Items.Clear();
 			foreach (var item in times)
 			{
-				listBox1.Items.Add(item.ToString("0.####"));
+				listBox1.Items.Add(item.ToString("0000.0000"));
 			}
 			double sum = 0;
 			listBox2.Items.Clear();
 			foreach (var item in times)
 			{
 				sum += item;
-				listBox2.Items.Add(sum.ToString("####.00"));
+				listBox2.Items.Add(sum.ToString("0000.0000"));
 			}
 			chart1.Series[0].Points.Clear();
 			for (int i = 0; i < grps; i++)
