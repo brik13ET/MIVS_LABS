@@ -1,14 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Globalization;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MIVS_LAB
@@ -24,21 +14,16 @@ namespace MIVS_LAB
 
         TaskForm f;
         Random rgen = new Random((int)DateTime.Now.Second);
+		double h = 0;
+		const int n = 15;
+		const float alpha = 0.05f;
+		const float y0 = 23.7f;
+		int N = 1000;
+		int m = 2;
 
-        private double AvgDist(double a, double b)
+		private double AvgDist(double a, double b)
         {
             return a + rgen.NextDouble() * (b - a);
-        }
-
-        private double NormDist(float micro, float D, float X)
-        {
-            double S = 0;
-            double w = Math.Sqrt(D);
-            for (int i = 0; i < m * m; i++)
-            {
-                S += X;
-            }
-            return (S - micro * m * m) / Math.Sqrt(m * m * D);
         }
 
         private double NormDist(float micro, float D)
@@ -47,7 +32,7 @@ namespace MIVS_LAB
             double w = Math.Sqrt(D);
             for (int i = 0; i < m*m; i++)
             {
-                S += AvgDist(micro -w, micro + w);
+                S += AvgDist(micro -w, micro + w) - 6;
             }
             return (S - micro * m*m) / Math.Sqrt(m*m*D);
         }
@@ -78,12 +63,6 @@ namespace MIVS_LAB
             }
             return ret;
         }
-        double h = 0;
-        const int n = 15;
-        const float alpha = 0.05f;
-        const float y0 = 23.7f;
-        int N = 1000;
-        int m = 2;
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -152,16 +131,6 @@ namespace MIVS_LAB
         private void button2_Click(object sender, EventArgs e)
         {
             f.Show();
-        }
-
-        private void chart2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void chart1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

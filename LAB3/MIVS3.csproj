@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0A1E1A7C-D144-4A0B-91E3-2A2CC880E4DC}</ProjectGuid>
+    <ProjectGuid>{DD1B81DF-817F-4336-A3DF-6B62C3D86754}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>LAB3</RootNamespace>
     <AssemblyName>LAB3</AssemblyName>
@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DoubleLinkedList.cs" />
+    <Compile Include="Event.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +56,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +67,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +81,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asm_ico.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\java_ico.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\net_ico.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\os_ico.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

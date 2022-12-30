@@ -93,7 +93,6 @@
             this.chart2.Size = new System.Drawing.Size(591, 206);
             this.chart2.TabIndex = 4;
             this.chart2.Text = "chart2";
-            this.chart2.Click += new System.EventHandler(this.chart2_Click);
             // 
             // splitContainer1
             // 

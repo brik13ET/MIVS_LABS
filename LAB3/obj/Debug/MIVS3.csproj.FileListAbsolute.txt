@@ -1,0 +1,11 @@
+D:\Git\MIVS_LABS\LAB3\obj\Debug\MIVS3.csproj.AssemblyReference.cache
+D:\Git\MIVS_LABS\LAB3\obj\Debug\MIVS3.csproj.SuggestedBindingRedirects.cache
+D:\Git\MIVS_LABS\LAB3\obj\Debug\MIVS3.csproj.GenerateResource.cache
+D:\Git\MIVS_LABS\LAB3\obj\Debug\MIVS3.csproj.CoreCompileInputs.cache
+D:\Git\MIVS_LABS\LAB3\obj\Debug\LAB3.Form1.resources
+D:\Git\MIVS_LABS\LAB3\bin\Debug\LAB3.exe.config
+D:\Git\MIVS_LABS\LAB3\bin\Debug\LAB3.exe
+D:\Git\MIVS_LABS\LAB3\bin\Debug\LAB3.pdb
+D:\Git\MIVS_LABS\LAB3\obj\Debug\LAB3.Properties.Resources.resources
+D:\Git\MIVS_LABS\LAB3\obj\Debug\LAB3.exe
+D:\Git\MIVS_LABS\LAB3\obj\Debug\LAB3.pdb
